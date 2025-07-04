@@ -1,0 +1,29 @@
+/* Estilo para escurecer o fundo */
+.carousel-item img {
+    filter: brightness(50%);
+    object-fit: cover;
+}
+
+/* Responsividade do texto no carrossel */
+.hero-text {
+    padding-top: 60px;
+}
+
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+}
+
+/*Navbar*/
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: yellow;
+}
