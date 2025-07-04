@@ -1,22 +1,18 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 /* Estilo para escurecer o fundo */
 .carousel-item img {
     filter: brightness(50%);
     object-fit: cover;
-}
-
-/* Responsividade do texto no carrossel */
-.hero-text {
-    padding-top: 60px;
-}
-
-@media (max-width: 768px) {
-    .hero-text h1 {
-        font-size: 2rem;
-    }
-
-    .hero-text p {
-        font-size: 1rem;
-    }
 }
 
 /*Navbar*/
@@ -26,4 +22,201 @@
 
 .nav-link:hover {
     color: yellow;
+}
+
+/* Seçao hero */
+.hero-text {
+    padding-top: 60px;
+    max-width: 600px;
+}
+
+.span-hero {
+    color: yellow;
+}
+
+/*botoes contato*/
+.btn-contato {
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: .2s ease-in-out;
+    border: none;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.btn-contato:hover {
+    background-color: yellow;
+}
+
+.btn-contato-preto {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: .2s ease-in-out;
+    border: none;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.btn-contato-preto:hover {
+    background-color: yellow;
+    color: #000;
+}
+
+/*por que escolher*/
+.por-que-escolher {
+    background-color: #fff;
+    color: #000;
+}
+
+.por-que-escolher h1 {
+    font-size: 3rem;
+}
+
+.por-que-escolher h2 {
+    font-size: 2.5rem;
+}
+
+.por-que-escolher .p-bold {
+    font-weight: 600;
+}
+
+.por-que-escolher h6 {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.por-que-escolher .row .col-4 h2 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+}
+
+.por-que-escolher .row .col-4 p {
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+/*Nossos serviços*/
+.nossos-servicos {
+    background-color: #000;
+    color: #fff;
+}
+
+.nossos-servicos h2,
+.nossos-servicos h3 {
+    text-align: center;
+    font-weight: 300;
+}
+
+.servico-item .icone {
+    width: 50px;
+    text-align: center;
+    background: #fff;
+    color: #000;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Portfolio*/
+.portfolio {
+    background-color: #f7f7f7;
+    color: #000;
+}
+
+.portfolio-img {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.portfolio-img:hover {
+    filter: grayscale(0%);
+}
+
+/*responsavel*/
+.responsavel {
+    background-color: #000;
+}
+
+.responsavel ul li {
+    margin-bottom: 0.5rem;
+}
+
+.responsavel strong {
+    color: #fff;
+}
+
+.responsavel img {
+    width: 80%;
+}
+
+/*perguntas frequentes*/
+.perguntas-frequentes {
+    background-color: #fff;
+    color: #000;
+}
+
+.perguntas-frequentes .faq-item {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.perguntas-frequentes .faq-item:hover {
+    background-color: #f9f9f9;
+}
+
+.perguntas-frequentes i {
+    transition: transform 0.3s ease;
+}
+
+/*Contato*/
+.btn-whatsapp {
+    background-color: #18773b;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    transition: .2s ease;
+}
+
+.btn-whatsapp:hover {
+    transform: scale(1.1);
+}
+
+/*footer*/
+.rodape {
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+/*Responsividade*/
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .por-que-escolher h1 {
+        font-size: 2rem;
+    }
+
+    .por-que-escolher .row .col-4 h2 {
+        font-size: 2rem;
+    }
+
+    .responsavel img {
+        width: 100%;
+    }
 }
